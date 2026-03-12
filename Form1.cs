@@ -1,5 +1,3 @@
-using System.Media;
-
 namespace CatchButton
 {
     public partial class Form1 : Form
@@ -11,17 +9,12 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // 잡았을 때 소리 재생
-            SystemSounds.Exclamation.Play();
-            // 잡았을 때 메시지 표시
-            MessageBox.Show("축하합니다~!", "성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void boxbox_MouseEnter(object sender, EventArgs e)
         {
             // 1. 난수생성기 준비
-            // 도망갈 때 소리 재생
-            SystemSounds.Asterisk.Play();
             var rd = new Random();
             // 2. 가용 영역 계산 (버튼이 폼 테두리에 걸리지 않게 보호)
             int maxX = this.ClientSize.Width - boxbox.Width;
