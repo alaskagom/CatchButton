@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            boxbox = new Button();
+            SuspendLayout();
+            // 
+            // boxbox
+            // 
+            boxbox.BackColor = Color.FromArgb(192, 192, 255);
+            boxbox.Font = new Font("맑은 고딕", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            boxbox.Location = new Point(470, 180);
+            boxbox.Name = "boxbox";
+            boxbox.Size = new Size(242, 100);
+            boxbox.TabIndex = 0;
+            boxbox.Text = "나를 잡아봐";
+            boxbox.UseVisualStyleBackColor = false;
+            boxbox.Click += button1_Click;
+            boxbox.MouseEnter += boxbox_MouseEnter;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(boxbox);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button boxbox;
     }
 }
