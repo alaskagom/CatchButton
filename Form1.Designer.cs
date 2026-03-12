@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             boxbox = new Button();
+            btnRestart = new Button();
             SuspendLayout();
             // 
             // boxbox
@@ -44,11 +45,22 @@
             boxbox.Click += button1_Click;
             boxbox.MouseEnter += boxbox_MouseEnter;
             // 
+            // btnRestart
+            // 
+            btnRestart.Location = new Point(12, 12);
+            btnRestart.Name = "btnRestart";
+            btnRestart.Size = new Size(100, 30);
+            btnRestart.TabIndex = 1;
+            btnRestart.Text = "다시시작";
+            btnRestart.UseVisualStyleBackColor = true;
+            btnRestart.Click += btnRestart_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRestart);
             Controls.Add(boxbox);
             Name = "Form1";
             Text = "Form1";
@@ -58,5 +70,6 @@
         #endregion
 
         private Button boxbox;
+        private Button btnRestart;
     }
 }
